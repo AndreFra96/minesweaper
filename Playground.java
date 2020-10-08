@@ -49,7 +49,7 @@ public class Playground {
      * @return true se la partita può continuare, false altrimenti
      */
     public boolean click(int row, int col) {
-        if (row < 0 || col < 0 || row >= height-1 || col >= height-1) {
+        if (row < 0 || col < 0 || row >= height || col >= width) {
             return true;
         } else if (this.grid[row][col].isBee()) {
             this.grid[row][col].reveal();
