@@ -96,7 +96,7 @@ public class Playground {
      * @return true se tutte le api sono state flaggate, false altrimenti
      */
     public boolean flag(int row, int col) {
-        if (row < 0 || col < 0 || row >= height-1 || col >= height-1) {
+        if (row < 0 || col < 0 || row >= height || col >= height) {
             return false;
         }
         this.grid[row][col].flag();
@@ -122,7 +122,7 @@ public class Playground {
     }
 
     public void unflag(int row, int col) {
-        if (row < 0 || col < 0 || row >= height-1 || col >= height-1) return;
+        if (row < 0 || col < 0 || row >= height || col >= height) return;
         this.grid[row][col].unflag();
     }
 
