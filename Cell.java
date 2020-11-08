@@ -1,4 +1,4 @@
-package minesweaper;
+package minesweeper;
 import java.util.Objects;
 
 public class Cell {
